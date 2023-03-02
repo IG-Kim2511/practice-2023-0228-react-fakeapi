@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+/* 🍀🍀 reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
+
+:root {
+  /* main */
+  --width-main: 1200px;
+
+  /* font */
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  /* size */
+  --base: 1rem;
+  --sm: calc(var(--base) * 1.5);
+  --med: calc(var(--base) * 3);
+  --large: calc(var(--base) * 5);
+
+  /*  */
+  --shadow: 0 2rem 3rem #777;
+
+  /* border-radius :basic 4px=0.25rem  */
+  --border-radius-4px: 0.3rem;
+
+  /* Animation :basic 300ms=0.3s  */
+  --animation_basic-duration-300ms: 300ms;
+
+  /* letterspacing : basic 0.1rem */
+  --letterspacing-basic: 0.1rem;
+
+    /* color */
+    --color-main1: #fff;
+    --color-main2: #fff;
+    --color-main3: #fff;
+  
+  
+     /* bootstrap */
+    --color-primary: #0d6efd;
+    --color-secondary: #6C757D;
+    --color-success: #198754;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #0dcaf0;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  /* font-family: "Open Sans", sans-serif; */
+
+  text-decoration: none; 
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  /* 🦄margin의 기준선이 border를 기준으로  만들어짐 */
+  box-sizing: border-box;
+
+  /* 🦄  모든 transition에 공통으로 넣음. 일일히 각 element마다 transition넣을 필요없음*/
+  transition: all 0.2s linear;   
+
 }
+
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: var(--width-main);
+  text-align: center;
+  margin: auto;
+  padding: 0 auto;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  
+  transition: all .2s linear;
+
+}
+
+
+  /* all same size */
+img{
+  float: left;
+  width:  300px;
+  height: 300px;
+  background-size: cover;
+  
+}
+
+.myBtn {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #198754 5%, #198754 100%);
+  background-color: #198754;
+  border-radius: 6px;
+  border: 1px solid #198754;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+.myBtn:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color: #019ad2;
+}
+.myBtn:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.title{
+  background-color: lightgreen;
+}
+
+
+  /* 🍀1200px (75rem)  */
+  @media (min-width: 1200px) {
+
+  }
+
+  
+  /* @  992px (62rem) */
+  @media (max-width: 992px) {
+
+    /* 992px기준으로 만들기 */
+  }
+
+
+  /* @ 768px (48rem) */
+  @media (max-width: 768px) {
+  
+  }
+  
+  /* @ 576px (36rem)  */
+  @media (max-width: 576px) {
+ 
+  }
+  
