@@ -1,27 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-/* 
-.nav{
-    display: flex;
-    margin: auto;
-    
-    justify-content:center;
-    align-items:center;
-
-    position: sticky;
-    top: 0;
-    background-color:#f8f9fa;
-}
-.nav .item{
-    padding: 1rem;
-}
-
-.nav .myBtn{
-    margin:1rem;
-    
-}
-*/
 
 const Navbar = styled.div`
     margin: auto;
@@ -35,8 +14,9 @@ const Navbar = styled.div`
     background-color:#f8f9fa;
 `
 
-const Item = styled.button`
+const Item = styled.span`
  padding: 1rem;
+ margin: 1rem;
 
 `
 
@@ -47,9 +27,10 @@ const Nav = () => {
       <h4 className='title'>Nav</h4>
 
             
-      <Item><Link to="/" className='item myBtn' >Home</Link></Item>
-      <Item><Link to="/products" className='item myBtn'>products</Link></Item>
-      <Item><Link to="/cart" className='item myBtn'>Cart(redux number)</Link></Item>              
+      <Item><Link to="/" className=' myBtn' >Home</Link></Item>
+      <Item><Link to="/products" className=' myBtn'>products</Link></Item>
+      <Item><Link to="/cart" className=' myBtn'>Cart(redux number)</Link></Item>    
+ 
     </Navbar>
   )
 }
