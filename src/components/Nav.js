@@ -27,9 +27,9 @@ const Nav = () => {
       <h4 className='title'>Nav</h4>
 
             
-      <Item><Link to="/" className=' myBtn' >Home</Link></Item>
-      <Item><Link to="/products" className=' myBtn'>products</Link></Item>
-      <Item><Link to="/cart" className=' myBtn'>Cart(redux number)</Link></Item>    
+      <Item><Link to="/" className='myBtn' >Home</Link></Item>
+      <Item><Link to="/products" className='myBtn'>products</Link></Item>
+      <Item><Link to="/cart" className='myBtn'>Cart(redux number)</Link></Item>    
  
     </Navbar>
   )
